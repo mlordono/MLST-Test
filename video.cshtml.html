@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLST Live Stream 2024____TEST CSHTML</title>
+    <!-- <link rel="stylesheet" type="text/css" href="https://vtube.net/Resources/vtube/css/main.min.css?ver=1"> -->
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="https://vtube.net/resources/vtube/css/vtv11_vtube.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://vtube.net/Resources/vtube/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://vtube.net/Resources/vtube/js/bootstrap.min.js"></script>
+    <link rel="icon" href="/img/riseagainlogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4023891-18"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-4023891-18');
+        </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-284078ZCTB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-284078ZCTB');
+    </script>
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+    <style>
+        body {
+            font-family: Avenir;
+        }
+        </style>
+</head>
+
+<body class="intro-copy--bg">
+    <input type="hidden" id="txt-email" value="@ViewBag.msg" />
+    <header>
+        <div class="vt-background--white vt-navbar-small-wrapper navbar fixed-top px-1 py-0">
+            <div class="container px-0 px-md-3">
+                <div class="mr-auto">
+                    <!-- <a class="navbar-brand" href="https://vtube.net/home" target="_blank"> -->
+                        <img class="mr-md-4" alt="logo" src="https://the-v.net/images/default-source/mlstpage/vconnect-logo-new85edd0a2-a77e-4459-bed4-e301eebb55ad.png">
+                    <!-- </a> -->
+                    <img class="mr-md-4" align="right" alt="logo" src="https://the-v.net/images/default-source/mlstpage/new-vtube-logo939626f1-303a-4d15-8171-672ea90d38db.png">
+                </div>
+                <!-- @*<a class="btn btn_header b text-dark  my-2 mr-1 ng-scope"
+                       style="color: white !important; background-color: #FA7236;" id="MyLiveChatScriptButton"
+                       onclick="MyLiveChat_OpenDialog()">
+                        LIVE CHAT
+                    </a>*@
+                @*<a class="btn btn_header btn-white text-dark border my-2 mr-1 ng-scope" id="btnVtbLogout"
+                    href="/main/logout?msg=Successfully logged out">LOG OUT</a>*@ -->
+            </div>
+        </div>
+        <!-- <nav class="vt-navbar-wrapper navbar navbar-dark fixed-top vt-header--bg d-none ">
+            <div class="container ">
+                <div class="modal vt-overlay__bg" id="divVtbBgDarker"></div>
+            </div>
+        </nav> -->
+    </header>
+    <br class="web-visible"><br class="web-visible">
+    <br class="web-visible"><br class="web-visible">
+    <div class="video-stream--player web-visible" style="margin-top: 70px !important; background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="web-visible">
+            <table class="web-vid-player">
+                <tr>
+                    <td colspan="2" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
+                        <video-js data-account="3745659807001" data-player="default" data-embed="default" controls="" data-video-id="@ViewBag.video"
+                                  style="margin-left: auto;margin-right:auto; width: 100%;"
+                                  data-application-id="" width="960" height="540"></video-js>
+                        <script src="https://players.brightcove.net/3745659807001/default_default/index.min.js"></script>
+                    </td>
+                </tr>
+                <tr class="web-visible-tbl pointer">
+                    <td style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 30%; background-color: #532CD1;">
+                        <div>
+                            <div class="text-center">
+                                <span style="color:white; font-size: 13px; line-height: 1;">Welcome@*, @ViewBag.msg*@</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;width: 30%;">
+                        <div class="accordion" id="accordionExample">
+                            <div class="text-center" style="background-color: #FAA836;" id="headingOne"
+                                 data-toggle="collapse" data-target="#collapseTrans" aria-expanded="true"
+                                 aria-controls="collapseTrans" role="button">
+                                <table>
+                                    <tr>
+                                        <td style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px;">
+                                            <img src="https://vtube.net/Resources/vtube/images/headset.png" alt="headset-icon" style="width: 30px;">
+                                        </td>
+                                        <td style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px;">
+                                            <span style="color:white; font-size: 13px; line-height: 1;" class="btn btn-link ">
+                                                Press this bar to select your preferred language interpretation
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="web-visible">
+                    <td colspan="2" class="web-visible" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
+                        <div style="color:black; background-color: white;" id="collapseTrans" class="collapse"
+                             aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body text-center" style="padding:0 !important;">
+                                <iframe id="interprefyiFrame" src="https://interprefy.interpret.world/loginlink?token=RiseAgain2024" style="width:100% ; height:420px"></iframe>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="video-stream--player mobile-visible" style="margin-top: 20px !important; background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="mobile-visible">
+            <table class="mob-vid-player" style="position: relative; width: 100%; max-width: 1140px; margin: auto;  z-index: 1;">
+                <tr>
+                    <td colspan="2" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
+                        <video-js data-account="3745659807001" data-player="default" data-embed="default" controls="" data-video-id="@ViewBag.video"
+                                  style="margin-left: auto;margin-right:auto; width: 100vw;"
+                                  data-application-id="" width="960" height="440"></video-js>
+                        <script src="https://players.brightcove.net/3745659807001/default_default/index.min.js"></script>
+                    </td>
+                </tr>
+                <tr class="mobile-visible-tbl">
+                    <td colspan="2" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;  background-color: #532CD1; width: 10%;">
+                        <div>
+                            <div class="text-center">
+                                <span style="color:white; font-size: 13px; line-height: 1; ">
+                                    Welcome, @ViewBag.msg!
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="mobile-visible-tbl">
+                    <td colspan="2" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 30%;">
+                        <div class="accordion" id="accordionExample1">
+                            <div class="text-center" style="background-color: #FAA836;" id="headingOne" data-toggle="collapse" data-target="#collapseTrans" aria-expanded="true" aria-controls="collapseTrans" role="button">
+                                <table>
+                                    <tr>
+                                        <td style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px;">
+                                            <img src="https://vtube.net/Resources/vtube/images/headset.png" alt="headset-icon" style="width: 30px;">
+                                        </td>
+                                        <td style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px;">
+                                            <span style="text-align: center; color:white; font-size: 13px; line-height: 1;" class="btn btn-link ">
+                                                Press this bar to select your preferred language interpretation
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="color:black; background-color: white;" id="collapseTrans" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample1">
+                            <div class="card-body text-center" style="padding:0 !important;">
+                                <iframe id="interprefyiFrame" src="https://interprefy.interpret.world/loginlink?token=RiseAgain2024" style="width:100% ; height:500px"></iframe>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br class="web-visible">
+    <br class="web-visible">
+    <br class="web-visible">
+    <br class="web-visible">
+    <br class="web-visible">
+    <br class="web-visible">
+    <br class="web-visible">
+    <br class="web-visible">
+    <div>
+        <div class="container-fluid">
+            <div class="row copy--padding">
+                <div class="col-md-12 logo-lp mx-auto">
+                    <img class="copy-logo" src='https://the-v.net/images/default-source/mlstpage/mylifestorytimef395d547-9e7e-4e6b-ade3-8a11143d7270' alt="site-logo">
+                </div>
+            </div>
+            <div class="row copy--padding web-visible">
+                <div class="col-md-12 copy-lp " style="z-index: 1;">
+                    <p class="copy-subtitle">
+                        Every journey begins with a decision—it all starts  <br />
+                        here. <span style="color:#d0f600; "><strong>My Life My Story My Time</strong></span> is about the<br />
+                         courage to embrace who you are, take <br />
+                         ownership of your story, and create your perfect <br />
+                         moment instead of waiting for it.
+                        <br />
+                      <span style="color:#00fbae; "><strong>Your time is now, what are you waiting for?</strong></span>
+                    </p>
+                    <br>
+                    <p class="copy-subtitle">
+                        Follow and tag us on social:
+                    </p>
+                    <p class="copy-subtitle">
+                        <a href="https://www.facebook.com/thevofficial" target="_blank" class="fa fa-facebook fa-social"></a>
+                        <a href="https://www.instagram.com/thev_official/" target="_blank" class="fa fa-circle fa-instagram fa-social"></a>
+                        &nbsp;<a href="https://twitter.com/thev_official" target="_blank" class="fa fa-twitter fa-social"></a>
+                    </p> <p class="copy-subtitle">
+                        #MyLifeMyStoryMyTime
+                    </p>
+                </div>
+            </div>
+            <div class="row copy--padding mobile-visible">
+                <div class="col-md-12 copy-lp " style="z-index: 1;">
+                    <p class="copy-subtitle">
+                      Every journey begins with a decision—it all starts  <br />
+                      here. <span style="color:#d0f600; "><strong>My Life My Story My Time</strong></span> is about the<br />
+                       courage to embrace who you are, take <br />
+                       ownership of your story, and create your perfect <br />
+                       moment instead of waiting for it.
+                      <br />
+                    <span style="color:#00fbae; "><strong>Your time is now, what are you waiting for?</strong></span>
+                    </p>
+                    <br> <p class="copy-subtitle">
+                        Follow and tag us on social:
+                    </p>
+                    <p class="copy-subtitle">
+                        <a href="https://www.facebook.com/thevofficial" target="_blank" class="fa fa-facebook fa-social"></a>
+                        <a href="https://www.instagram.com/thev_official/" target="_blank" class="fa fa-circle fa-instagram fa-social"></a>
+                        &nbsp;<a href="https://twitter.com/thev_official" target="_blank" class="fa fa-twitter fa-social"></a>
+                    </p> <p class="copy-subtitle">
+                        #MyLifeMyStoryMyTime
+                    </p>
+                </div>
+            </div>
+
+            <br class="web-visible">
+            <br class="web-visible">
+            <br class="web-visible">
+            <br class="web-visible">
+            <br class="web-visible">
+            <div class="row copy--padding">
+                <div class="accordion col-md-12 acc-faqs" id="accordionExample">
+                    <!-- <div class="card-header text-center faqs-title">
+                        Frequently Asked Questions
+                    </div> -->
+                    <div class="card-header">
+                      <div class="text-center faqs-title" id="headingTwo">
+                          <h2>
+                              Frequently Asked Questions
+                              <hr class="solid">
+                          </h2>
+                      </div>
+                        <div class="" id="headingTwo">
+                            <h2>
+                                <button class="btn btn-link collapsed faq-button" id="avt" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-parent="#accordionExample">
+                                    The video isn’t loading.
+                                    <i class="animate-icon fa fa-solid fa-caret-right web-accordion float-right"></i>
+                                    <i class="animate-icon fa fa-solid fa-caret-right mobile-accordion float-right"></i>
+                                </button>
+                                <hr class="solid">
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse  " aria-labelledby="headingTwo">
+                            <div class="card-body">
+                                <br>
+                                Check your current internet speed. You need at least 20 Mbps for a smooth viewing experience. Make sure you have a stable internet connection to be able to watch the live broadcast.
+                                <br />
+
+                            </div>
+                        </div>
+
+                        <div class="" id="heading3">
+                            <h2>
+                                <button class="btn btn-link collapsed faq-button" id="avt" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3" data-parent="#accordionExample">
+                                    I can’t hear the audio.
+                                    <i class="animate-icon fa fa-solid fa-caret-right web-accordion float-right"></i>
+                                    <i class="animate-icon fa fa-solid fa-caret-right mobile-accordion float-right"></i>
+                                </button>
+                                <hr class="solid">
+                            </h2>
+                        </div>
+                        <div id="collapse3" class="collapse  " aria-labelledby="heading3">
+                            <div class="card-body">
+                                <br>
+                                Click on the video. At the lower left of the screen, you can find the speaker/sound button beside the word LIVE. Click on the icon and make sure that audio is turned on.
+                                <br>
+
+                            </div>
+                        </div>
+                        <div class="" id="heading4">
+                            <h2>
+                                <button class="btn btn-link collapsed faq-button" id="avt" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4" data-parent="#accordionExample">
+                                    There is no translation.
+                                    <i class="animate-icon fa fa-solid fa-caret-right web-accordion float-right"></i>
+                                    <i class="animate-icon fa fa-solid fa-caret-right mobile-accordion float-right"></i>
+                                </button>
+                                <hr class="solid">
+                            </h2>
+                        </div>
+                        <div id="collapse4" class="collapse  " aria-labelledby="heading4">
+                            <div class="card-body">
+                                <br>
+                                Click on the orange bar below the video screen which reads “Press the image to see Translation”. Click on the drop down menu and select the language you prefer. Click CONNECT.
+                                <br>
+                            </div>
+                        </div>
+                        <div class="" id="heading5">
+                            <h2>
+                                <button class="btn btn-link collapsed faq-button" id="avt" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5" data-parent="#accordionExample">
+                                    Can I rewind the video?
+                                    <i class="animate-icon fa fa-solid fa-caret-right web-accordion float-right"></i>
+                                    <i class="animate-icon fa fa-solid fa-caret-right mobile-accordion float-right"></i>
+                                </button>
+                                <hr class="solid">
+                            </h2>
+                        </div>
+                        <div id="collapse5" class="collapse  " aria-labelledby="heading5">
+                            <div class="card-body">
+                                <br>
+                                No. The event is broadcasted LIVE so make sure to stay tuned for the entire day so you don’t miss out on any of our guest speakers!
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-header rounded-bottom">
+                    </div>
+                </div>
+            </div>
+            <br class="web-visible">
+            <br class="web-visible">
+            <br class="web-visible">
+            <br class="web-visible">
+            <br>
+        </div>
+        <!-- <img src="https://vtube.net/Resources/vcc2021/october/vcc2021-footer.png" style="width: 100%; position: relative; z-index: 1;" alt="">  -->
+
+    </div>
+    <div class="vt-footer mt-auto py-3">
+        <div>
+            <footer id="Section_footerLogOut" class="vt-footer mt-auto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 vt-footer__copyright">
+                            <a id="linkVtbContactUs" href="https://vtube.net/contacts" style="border-right:1px solid #fff; padding-right: 10px;" target="_blank">
+                                Contact Us
+                            </a>
+                            <a id="linkVtbFaqs" type="button" href="https://vtube.net/FAQS" style="padding-left: 10px;">
+                                FAQs
+                            </a>
+                        </div>
+                        <div class="col-md-4  vt-footer__copyright ">
+                            <!-- <a href="https://www.facebook.com/thevofficial" target="_blank" class="fa fa-facebook fa-social"
+                                style="border-right:1px solid #333;"></a>
+                            <a href="https://www.instagram.com/thev_official/" target="_blank" class="fa fa-circle fa-instagram fa-social"
+                                style="border-right:1px solid #333;"></a>
+                            <a href="https://twitter.com/thev_official" target="_blank" class="fa fa-twitter fa-social"></a> -->
+                            <a href="https://www.facebook.com/thevofficial" target="_blank" class="fa fa-facebook fa-social"></a>
+                            <a href="https://www.instagram.com/thev_official/" target="_blank" class="fa fa-circle fa-instagram fa-social"></a>
+                            <a href="https://twitter.com/thev_official" target="_blank" class="fa fa-twitter fa-social"></a>
+                        </div>
+                        <div class="col-md-4 vt-footer__copyright" style="border-bottom: 0px;">
+                            <span>
+                                Copyright ©
+                                <span id="linkVtbYear">
+                                    2024
+                                </span>
+                                VTUBE
+                            </span>
+                        </div>
+                        <div class="sharethis-inline-share-buttons">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://vtube.net/Resources/vtube/js/bootstrap.min.js"></script>
+    <script>
+        $("button").click(function () {
+            $('html,body').animate({
+                scrollTop: $(".acc-faqs").offset().top
+            },
+                'slow');
+        });
+    </script>
+    <script type="text/javascript" language="javascript">
+        document.getElementById('abe').addEventListener('click', function () {
+            var icon = this.querySelector('i.web-accordion');
+            icon.classList.toggle('rotate');
+        });
+        document.getElementById('avt').addEventListener('click', function () {
+            var icon = this.querySelector('i.web-accordion');
+            icon.classList.toggle('rotate');
+        });
+        document.getElementById('ap').addEventListener('click', function () {
+            var icon = this.querySelector('i.web-accordion');
+            icon.classList.toggle('rotate');
+        });
+        document.getElementById('otd').addEventListener('click', function () {
+            var icon = this.querySelector('i.web-accordion');
+            icon.classList.toggle('rotate');
+        });
+        document.getElementById('att').addEventListener('click', function () {
+            var icon = this.querySelector('i.web-accordion');
+            icon.classList.toggle('rotate');
+        });
+
+        document.getElementById('abe').addEventListener('click', function () {
+            var icon = this.querySelector('i.mobile-accordion');
+            icon.classList.toggle('rotate');
+        });
+        document.getElementById('avt').addEventListener('click', function () {
+            var icon = this.querySelector('i.mobile-accordion');
+            icon.classList.toggle('rotate');
+        });
+        document.getElementById('ap').addEventListener('click', function () {
+            var icon = this.querySelector('i.mobile-accordion');
+            icon.classList.toggle('rotate');
+        });
+        document.getElementById('otd').addEventListener('click', function () {
+            var icon = this.querySelector('i.mobile-accordion');
+            icon.classList.toggle('rotate');
+        });
+        document.getElementById('att').addEventListener('click', function () {
+            var icon = this.querySelector('i.mobile-accordion');
+            icon.classList.toggle('rotate');
+        });
+    </script>
+
+    <script type="text/javascript" language="javascript">
+        function DisableBackButtons() {
+            window.history.forward()
+        }
+        DisableBackButtons();
+        window.onload = DisableBackButtons;
+        window.onpageshow = function (evt) {
+            if (evt.persisted) DisableBackButtons()
+        }
+        window.onunload = function () {
+            void (0)
+        }
+    </script>
+
+    <script type="text/javascript">
+        function add_chatbutton() {
+            var hccid = 37870079;
+            var nt = document.createElement("script");
+            nt.async = true;
+            nt.src = "https://mylivechat.com/chatbutton.aspx?hccid=" + hccid;
+            var ct = document.getElementsByTagName("script")[0];
+            ct.parentNode.insertBefore(nt, ct);
+        }
+        add_chatbutton();
+    </script>
+    <script>
+        //var source = new EventSource("/live/login/" + jQuery("#txt-email").val());
+        //source.onmessage = function (event) {
+        //    if (event.data == "True") {
+        //        window.location.href =
+        //            "/main/index?msg=You have a login from another location. Please login again.";
+        //    }
+        //};
+    </script>
+    <script type="text/javascript">
+    $(window).on('load', function() {
+       // $('#exampleModal').modal('@ViewBag.showTranslate');
+    });
+    </script>
+</body>
+</html>

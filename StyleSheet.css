@@ -1,0 +1,1688 @@
+﻿
+@font-face {
+    font-family: 'Avenir';
+    src: url("/fonts/AvenirRegular.ttf") format('truetype');
+}
+
+.animate-icon {
+  transition: 0.4s;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+
+.card {
+  position: relative;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  /* padding: .75rem 1.25rem;
+              margin-bottom: 0; */
+  background-color: rgb(225 152 0);
+  border-bottom: none;
+}
+
+.rounded-top {
+  border-top-left-radius: 2.5rem !important;
+  border-top-right-radius: 2.5rem !important;
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: 15.5rem !important;
+  border-bottom-right-radius: 15.5rem !important;
+}
+
+hr.solid {
+  border-top: 1px solid #002c50;
+  width: 97%;
+}
+
+.modal-dialog {
+  max-width: 800px;
+}
+
+.intro-copy--bg {
+  position: relative;
+}
+
+.vjs-dock-text {
+  display: none;
+}
+
+.video-stream--player {
+  position: relative;
+}
+
+.card-body {
+  /* overflow: scroll;
+              scroll-margin: 0 0 0 20px; */
+  font-size: 20px;
+  color: #002c50;
+}
+
+.tbl-border tr,
+.tbl-border td {
+  border: 1px solid black;
+}
+
+.faq--card li {
+  padding-bottom: 10px;
+}
+
+.faq--card ol {
+  padding-left: 10px;
+}
+
+.faq--card ol ol {
+  padding-left: 30px;
+}
+
+
+._proprofs_footer_link {
+  visibility: hidden !important;
+}
+
+.user-login__banner {
+  display: none;
+}
+
+.faq--card {
+  background-color: white;
+}
+
+.open-button {
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  z-index: 1;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  background-color: white;
+  display: none;
+  position: fixed;
+  bottom: 110px;
+  right: 15px;
+  z-index: 9;
+  border-radius: 10px 10px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  text-align: right;
+}
+
+/* Full-width textarea */
+.form-container input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  resize: none;
+  height: 0px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container input:focus {
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #01a7ce;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+/*@font-face {
+  font-family: Bison;
+  src: url("/fonts/Bison_Bold.ttf");
+}
+
+@font-face {
+  font-family: Futura;
+  src: url("/fonts/Futura_Condensed_Regular.ttf");
+}
+*/
+body {
+  font-family: Bison;
+  color: white;
+}
+
+.lp-faq {
+  background-color: #f2693f;
+}
+
+.fa {
+  font-size: 24px;
+  width: 10px;
+}
+.fa-social {
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-twitter {
+  color: white;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.panel-title a {
+  color: #ffffff;
+  /*text-transform: uppercase;*/
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.panel-body ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  list-style-position: outside;
+}
+
+.btn-link:focus,
+.btn-link:hover {
+color: #002c50 !important;
+  background-color: transparent !important;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+
+@media only screen and (min-device-width: 300px) {
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 5px !important;
+    color: white;
+  }
+
+  .vt-footer__copyright {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 10px !important;
+    color: #002c50;
+  }
+
+  .faqs-title {
+    font-size: 30px;
+    color: #002c50;
+  }
+
+  .mobile-visible {
+    display: block;
+  }
+
+  .web-visible {
+    display: none;
+  }
+
+  .mobile-accordion {
+    display: inline-flex;
+  }
+
+  .web-accordion {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 200px;
+  }
+
+  .copy-title {
+    font-size: 30px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: -10px;
+  }
+
+  .copy-title-2 {
+    font-size: 30px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 15px 0px 15px;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    min-height: 315px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+  .intro-copy--bg {
+    background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    /* height: 1785px; */
+    background-size: cover;
+    height: 100%;
+    background-attachment: scroll;
+  }
+
+  .mr-md-3 {
+    position: relative;
+    top: -10px;
+  }
+  .mr-md-4 {
+    position: relative;
+    top:10px;
+  }
+}
+
+@media only screen and (min-device-width: 350px) {
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 5px !important;
+  }
+
+  .vt-footer__copyright {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 10px !important;
+    color: #002c50;
+  }
+
+  .faqs-title {
+    font-size: 30px;
+    color: #002c50;
+  }
+
+  .mobile-visible {
+    display: block;
+  }
+
+  .web-visible {
+    display: none;
+  }
+
+  .mobile-accordion {
+    display: inline-flex;
+  }
+
+  .web-accordion {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 200px;
+  }
+
+  .copy-title {
+    font-size: 30px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: -10px;
+  }
+
+  .copy-title-2 {
+    font-size: 30px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    color: #ffffff;
+    padding: 0px 15px 0px 15px;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    min-height: 315px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+  .intro-copy--bg {
+    background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    /* height: 1830px; */
+    background-size: cover;
+    height: 100%;
+    background-attachment: scroll;
+  }
+
+  .mr-md-2 {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 400px) {
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 5px !important;
+    color: white;
+  }
+
+  .vt-footer__copyright {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 10px !important;
+    color: #002c50;
+  }
+
+  .faqs-title {
+    font-size: 30px;
+    color: #002c50;
+  }
+
+  .mobile-visible {
+    display: block;
+  }
+
+  .web-visible {
+    display: none;
+  }
+
+  .mobile-accordion {
+    display: inline-flex;
+  }
+
+  .web-accordion {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 200px;
+  }
+
+  .copy-title {
+    font-size: 30px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: -10px;
+  }
+
+  .copy-title-2 {
+    font-size: 30px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 15px 0px 15px;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    min-height: 315px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+  .intro-copy--bg {
+    background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    /* height: 1785px; */
+    background-size: cover;
+    height: 100%;
+    background-attachment: scroll;
+  }
+
+  .mr-md-2 {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 450px) {
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 5px !important;
+    color: white;
+  }
+
+  .vt-footer__copyright {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 10px !important;
+    color: #002c50;
+  }
+
+  .faqs-title {
+    font-size: 30px;
+    color: #002c50;
+  }
+
+  .mobile-visible {
+    display: block;
+  }
+
+  .web-visible {
+    display: none;
+  }
+
+  .mobile-accordion {
+    display: inline-flex;
+  }
+
+  .web-accordion {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 200px;
+  }
+
+  .copy-title {
+    font-size: 30px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: -10px;
+  }
+
+  .copy-title-2 {
+    font-size: 30px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 15px 0px 15px;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    min-height: 315px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+  .intro-copy--bg {
+    background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    /* height: 1650px; */
+    background-size: cover;
+    height: 100%;
+    background-attachment: scroll;
+  }
+
+  .mr-md-2 {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 15px !important;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 15px !important;
+    color: #002c50;
+    /* padding-left: 4%; */
+  }
+
+  .faqs-title {
+    font-size: 35px;
+    color: #002c50;
+  }
+
+  .mobile-visible-tbl {
+    display: table;
+  }
+
+  .web-visible-tbl {
+    display: none;
+  }
+
+  .mobile-visible {
+    display: block;
+  }
+
+  .web-visible {
+    display: none;
+  }
+
+  .mobile-accordion {
+    display: inline-flex;
+  }
+
+  .web-accordion {
+    display: none;
+  }
+
+  .volt-player--web {
+    display: none;
+  }
+
+  .vtube-pattern-web {
+    display: none;
+  }
+
+  .volt-player--mobile {
+    display: block;
+  }
+
+  .display-mobile {
+    display: block;
+  }
+
+  .copy-logo {
+    width: 200px;
+  }
+
+  .copy-title {
+    font-size: 45px;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    /* margin-bottom: 20px; */
+  }
+
+  .copy-title-2 {
+    font-size: 45px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 15px 0px 15px;
+    font-size: 25px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    min-height: 315px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+  .copy--padding {
+    padding: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 20px !important;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 25px !important;
+    color: #002c50;
+    /* padding-left: 4%; */
+  }
+
+  .faqs-title {
+    font-size: 45px;
+    color: #002c50;
+  }
+
+  .acc-faqs {
+    padding: 0px 40px 0px 40px;
+  }
+
+  .mobile-visible-tbl {
+    display: inline-table;
+  }
+
+  .web-visible-tbl {
+    display: none;
+  }
+
+  .mobile-visible {
+    display: block;
+  }
+
+  .web-visible {
+    display: none;
+  }
+
+  .mobile-accordion {
+    display: inline-flex;
+  }
+
+  .web-accordion {
+    display: none;
+  }
+
+  .volt-player--web {
+    display: none;
+  }
+
+  .vtube-pattern-web {
+    display: none;
+  }
+
+  .volt-player--mobile {
+    display: block;
+  }
+
+  .display-mobile {
+    display: block;
+  }
+
+  .copy-logo {
+    width: 300px;
+  }
+
+  .copy-title {
+    font-size: 50px;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: 20px;
+  }
+
+  .copy-title-2 {
+    font-size: 50px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 10px 0px 10px;
+    font-size: 30px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    height: 332px !important;
+    max-width: 1140px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+  .intro-copy--bg {
+    background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    /* height: 1900px; */
+    background-size: cover;
+    height: 100%;
+    background-attachment: scroll;
+  }
+
+  .copy--padding {
+    padding: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .web-vid-player {
+    position: relative;
+    width: 100%;
+    max-width: 788px !important;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 20px !important;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 25px !important;
+    color: #002c50;
+    /* padding-left: 4%; */
+  }
+
+  .faqs-title {
+    font-size: 45px;
+    color: #002c50;
+  }
+
+  .acc-faqs {
+    padding: 0px 100px 0px 100px;
+  }
+
+  .web-visible-tbl {
+    display: inline-table;
+    /* width: 788px !important; */
+  }
+
+  .mobile-visible-tbl {
+    display: none;
+  }
+
+  .web-visible {
+    display: block;
+  }
+
+  .mobile-visible {
+    display: none !important;
+  }
+
+  .web-accordion {
+    display: inline-flex;
+  }
+
+  .mobile-accordion {
+    display: none !important;
+  }
+
+  .volt-player--web {
+    display: none;
+  }
+
+  .vtube-pattern-web {
+    display: block;
+  }
+
+  .volt-player--mobile {
+    display: none;
+  }
+
+  .display-mobile {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 215px;
+  }
+
+  .copy-title {
+    font-size: 55px;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: 20px;
+  }
+
+  .copy-title-2 {
+    font-size: 55px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 50px 0px 50px;
+    font-size: 35px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    height: 440px !important;
+    max-width: 788px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    /* padding-left: 50px; */
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+  .intro-copy--bg {
+    background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    /* height: 2110px; */
+    background-size: cover;
+    height: 100%;
+    background-attachment: scroll;
+  }
+
+  .copy--padding {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+    .intro-copy--bg {
+        background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        /* height: 2000px; */
+        background-size: cover;
+        height: 100%;
+        background-attachment: scroll;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .web-vid-player {
+    position: relative;
+    width: 100%;
+    max-width: 970px !important;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 20px !important;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 25px !important;
+    color: #002c50;
+    /* padding-left: 4%; */
+  }
+
+  .faqs-title {
+    font-size: 45px;
+    color: #002c50;
+  }
+
+  .acc-faqs {
+    padding: 0px 250px 0px 250px;
+  }
+
+  .web-visible-tbl {
+    display: inline-table;
+    width: 970px !important;
+  }
+
+  .mobile-visible-tbl {
+    display: none;
+  }
+
+  .web-visible {
+    display: block;
+  }
+
+  .mobile-visible {
+    display: none !important;
+  }
+
+  .web-accordion {
+    display: inline;
+  }
+
+  .mobile-accordion {
+    display: none !important;
+  }
+
+  .volt-player--web {
+    display: block;
+  }
+
+  .vtube-pattern-web {
+    display: block;
+  }
+
+  .volt-player--mobile {
+    display: none;
+  }
+
+  .display-mobile {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 800px;
+  }
+
+  .copy-title {
+    font-size: 65px;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: 20px;
+  }
+
+  .copy-title-2 {
+    font-size: 65px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 160px 0px 160px;
+    font-size: 40px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    height: 548px !important;
+    max-width: 970px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    font-size: 18px;
+    /* padding-right: 140px; */
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+    .intro-copy--bg {
+        background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        /* height: 2300px;  */
+        background-size: cover;
+        height: 100%;
+        background-attachment: scroll;
+    }
+
+  .copy--padding {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .web-vid-player {
+    position: relative;
+    width: 100%;
+    max-width: 970px !important;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 20px !important;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 25px !important;
+    color: #002c50;
+    /* padding-left: 4%; */
+  }
+
+  .faqs-title {
+    font-size: 45px;
+    color: #002c50;
+  }
+
+  .acc-faqs {
+    padding: 0px 250px 0px 250px;
+  }
+
+  .web-visible-tbl {
+    display: inline-table;
+    width: 970px !important;
+  }
+
+  .mobile-visible-tbl {
+    display: none;
+  }
+
+  .web-visible {
+    display: block;
+  }
+
+  .mobile-visible {
+    display: none !important;
+  }
+
+  .web-accordion {
+    display: inline;
+  }
+
+  .mobile-accordion {
+    display: none !important;
+  }
+
+  .volt-player--web {
+    display: block;
+  }
+
+  .vtube-pattern-web {
+    display: block;
+  }
+
+  .volt-player--mobile {
+    display: none;
+  }
+
+  .display-mobile {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 800px;
+  }
+
+  .copy-title {
+    font-size: 65px;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: 20px;
+  }
+
+  .copy-title-2 {
+    font-size: 65px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 160px 0px 160px;
+    font-size: 40px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    height: 548px !important;
+    max-width: 970px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    font-size: 18px;
+    /* padding-right: 140px; */
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+    .intro-copy--bg {
+        background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        /* height: 2255px;  */
+        background-size: cover;
+        height: 100%;
+        background-attachment: scroll;
+    }
+
+  .copy--padding {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .web-vid-player {
+    position: relative;
+    width: 100%;
+    max-width: 1140px !important;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 30px !important;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 25px !important;
+    color: #002c50;
+    /* padding-left: 4%; */
+  }
+
+  .faqs-title {
+    font-size: 45px;
+    color: #002c50;
+  }
+
+  .acc-faqs {
+    padding: 0px 250px 0px 250px;
+  }
+
+  .web-visible {
+    display: block;
+  }
+
+  .mobile-visible {
+    display: none !important;
+  }
+
+  .web-visible-tbl {
+    display: inline-table;
+    width: 1140px !important;
+  }
+
+  .mobile-visible-tbl {
+    display: none;
+  }
+
+  .web-accordion {
+    display: inline-flex;
+  }
+
+  .mobile-accordion {
+    display: none;
+  }
+
+  .volt-player--web {
+    display: block;
+  }
+
+  .vtube-pattern-web {
+    display: block;
+  }
+
+  .volt-player--mobile {
+    display: none;
+  }
+
+  .display-mobile {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 600px;
+  }
+
+  .copy-title {
+    font-size: 65px;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: 20px;
+  }
+
+  .copy-title-2 {
+    font-size: 65px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 160px 0px 160px;
+    font-size: 40px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    height: 641px !important;
+    max-width: 1140px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    font-size: 18px;
+    /* padding-right: 300px; */
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+    .intro-copy--bg {
+        background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        /* height: 2280px; */
+        background-size: cover;
+        height: 100%;
+        background-attachment: scroll;
+    }
+
+  .copy--padding {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .container {
+    max-width: 1598px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .web-vid-player {
+    position: relative;
+    width: 100%;
+    max-width: 1600px !important;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+  }
+
+  .vt-footer {
+    font-size: 30px !important;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 40px !important;
+    color: #002c50;
+    /* padding-left: 4%; */
+  }
+
+  .faqs-title {
+    font-size: 55px;
+    color: #002c50;
+  }
+
+  .acc-faqs {
+    padding: 0px 250px 0px 250px;
+  }
+
+  .web-visible {
+    display: block;
+  }
+
+  .mobile-visible {
+    display: none !important;
+  }
+
+  .web-visible-tbl {
+    display: inline-table;
+    width: 1600px !important;
+  }
+
+  .mobile-visible-tbl {
+    display: none;
+  }
+
+  .web-accordion {
+    display: inline-flex;
+  }
+
+  .mobile-accordion {
+    display: none;
+  }
+
+  .volt-player--web {
+    display: block;
+  }
+
+  .vtube-pattern-web {
+    display: block;
+  }
+
+  .volt-player--mobile {
+    display: none;
+  }
+
+  .display-mobile {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 600px;
+  }
+
+  .copy-title {
+    font-size: 100px;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: 20px;
+  }
+
+  .copy-title-2 {
+    font-size: 100px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 160px 0px 160px;
+    font-size: 70px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    height: 895px !important;
+    max-width: 1600px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    font-size: 28px;
+    /* padding-right: 140px; */
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+    .intro-copy--bg {
+        background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        /* height: 3100px; */
+        background-size: cover;
+        height: 100%;
+        background-attachment: scroll;
+    }
+
+  .copy--padding {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .container {
+    max-width: 1598px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .web-vid-player {
+    position: relative;
+    width: 100%;
+    max-width: 2800px !important;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .card-body {
+    font-family: Futura;
+    color: #002c50;
+    font-size: 30px;
+  }
+
+  .vt-footer {
+    font-size: 30px !important;
+    color: white;
+  }
+
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    font-size: 45px !important;
+    color: #002c50;
+    /* padding-left: 4%; */
+  }
+
+  .faqs-title {
+    font-size: 75px;
+    color: #002c50;
+  }
+
+  .acc-faqs {
+    padding: 0px 250px 0px 250px;
+  }
+
+  .web-visible {
+    display: block;
+  }
+
+  .mobile-visible {
+    display: none !important;
+  }
+
+  .web-visible-tbl {
+    display: inline-table;
+    width: 2800px !important;
+  }
+
+  .mobile-visible-tbl {
+    display: none;
+  }
+
+  .web-accordion {
+    display: inline-flex;
+  }
+
+  .mobile-accordion {
+    display: none;
+  }
+
+  .volt-player--web {
+    display: block;
+  }
+
+  .vtube-pattern-web {
+    display: block;
+  }
+
+  .volt-player--mobile {
+    display: none;
+  }
+
+  .display-mobile {
+    display: none;
+  }
+
+  .copy-logo {
+    width: 800px;
+  }
+
+  .copy-title {
+    font-size: 120px;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 1px rgb(130, 138, 255);
+    margin-bottom: 20px;
+  }
+
+  .copy-title-2 {
+    font-size: 120px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .copy-subtitle {
+    padding: 0px 160px 0px 160px;
+    font-size: 90px;
+    text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125),
+      0 0 0.2em rgb(128, 125, 125);
+  }
+
+  .player-style {
+    width: 100% !important;
+    height: 1575px !important;
+    max-width: 2800px !important;
+  }
+
+  .copy-lp {
+    text-align: center;
+    font-size: 28px;
+    /* padding-right: 140px; */
+  }
+
+  .logo-lp {
+    text-align: center;
+  }
+
+    .intro-copy--bg {
+        background-image: url("https://the-v.net/images/default-source/mlstpage/bgb9730e03-2cbd-4e58-aefc-611fe62716f5.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        /* height: 4130px; */
+        background-size: cover;
+        height: 100%;
+        background-attachment: scroll;
+    }
+
+  .copy--padding {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .container {
+    max-width: 2318px;
+  }
+}

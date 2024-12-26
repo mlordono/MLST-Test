@@ -1,0 +1,2739 @@
+﻿
+@font-face {
+    font-family: Bison;
+    src: url('/fonts/Bison_Bold.ttf');
+}
+
+body {
+    font-family: Bison;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+input[type=text] {
+    border: 2px solid #CAB6E4;
+    border-radius: 4px;
+}
+
+input[type=password] {
+    border: 2px solid #CAB6E4;
+    border-radius: 4px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.input-text--login {
+    /* background-color: #CAB6E4; */
+    width: 100%;
+    font-size: 15px;
+    padding: 7px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+   
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    h5 {
+        font-weight: 600;
+        font-size: 14px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 21px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    .email-pass-lable {
+        font-size: 15px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        margin: 0px 0px 0px 7px;
+    }
+
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 400px; */
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 0px 50px 40px 50px;
+        /* height: 550px; */
+        background-size: cover;
+    }
+
+    .vcc-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 30px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 270px;
+        margin-top: 35px;
+    }
+
+    h5 {
+        font-weight: 600;
+        font-size: 14px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 21px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none ;
+    }
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    h5 {
+        font-weight: 600;
+        font-size: 14px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 18px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none;
+    }
+    /* Styles */
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc-title {
+        font-size: 25px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 20px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    h5 {
+        font-weight: 600;
+        font-size: 22px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none;
+    }
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    .vcc-title {
+        font-size: 25px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 20px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    h5 {
+        font-weight: 600;
+        font-size: 22px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+    }
+
+    .login-box--copy {
+
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none;
+    }
+    /* Styles */
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+   
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc-title {
+        font-size: 25px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 20px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    h5 {
+        font-weight: 600;
+        font-size: 22px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #F99F2B;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none;
+    }
+    /* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+   
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc-title {
+        font-size: 25px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 20px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none;
+    }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+        padding: 70px;
+    }
+
+    .vcc-title {
+        font-size: 55px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 40px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 67%;
+        margin-top: 60px;
+        padding: 10px
+    }
+
+    .web-visible {
+        display: block;
+        top: -100px !important;
+    }
+
+    .mobile-visible {
+        display: none !important;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    /* Styles */
+
+
+    h5 {
+        font-weight: 600;
+        font-size: 22px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .mobile-visible {
+        display: none;
+    }
+
+    .web-visible {
+        display: block;
+    }
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    
+
+    /* Styles */
+
+    h5 {
+        font-weight: 600;
+        font-size: 14px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 21px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    .email-pass-lable {
+        font-size: 15px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        margin: 0px 0px 0px 7px;
+    }
+    
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 0px 35px 25px 50px;
+        /* height: 520px; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 300px;
+        padding: 30px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 445px; */
+        background-size: cover;
+    }
+
+    /* Styles */
+
+
+    h5 {
+        font-weight: 600;
+        font-size: 14px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 20px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none;
+    }
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    /* Styles */
+
+
+    h5 {
+        font-weight: 600;
+        font-size: 14px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 21px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .mobile-visible {
+        display: block;
+
+
+    }
+
+    .web-visible {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 30px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 200px;
+        padding: 30px
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 190px; */
+        background-size: cover;
+    }
+
+    /* Styles */
+
+
+    h5 {
+        font-weight: 600;
+        font-size: 12px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 17px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .mobile-visible {
+        display: block;
+
+    }
+
+    .web-visible {
+        display: none;
+    }
+
+
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    /* Styles */
+
+    h5 {
+        font-weight: 600;
+        font-size: 14px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 21px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .mobile-visible {
+        display: block;
+
+    }
+
+    .web-visible {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    /* Styles */
+
+
+    h5 {
+        font-weight: 600;
+        font-size: 14px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 21px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .web-visible {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 50px;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .vcc2022-logo {
+        width: 100%;
+        padding: 30px
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        height: 100vh;
+        background-size: cover;
+    }
+
+    /* Styles */
+
+
+    h5 {
+        font-weight: 600;
+        font-size: 14px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 21px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 240px;
+    }
+
+    .mobile-visible {
+        display: block;
+
+
+    }
+
+    .web-visible {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+        padding: 70px;
+    }
+
+    .vcc-title {
+        font-size: 25px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 20px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 67%;
+        margin-top: 60px;
+        padding: 10px
+    }
+
+    .web-visible {
+        display: block;
+        top: -100px !important;
+    }
+
+    .mobile-visible {
+        display: none !important;
+    }
+
+    .lc-btn {
+        width: 80% !important;
+    }
+
+    .volt-lc {
+        width: 80% !important; 
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 100vh; */
+        background-size: cover;
+        padding: 70px;
+    }
+
+    .vcc-title {
+        font-size: 25px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 20px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 67%;
+        margin-top: 60px;
+        padding: 10px
+    }
+
+    .web-visible {
+        display: block;
+        top: -100px !important;
+    }
+
+    .mobile-visible {
+        display: none !important;
+    }
+
+    .lc-btn {
+        width: 80% !important;
+    }
+
+    .volt-lc {
+        width: 80% !important; 
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .web-visible {
+        display: block;
+    }
+
+    .mobile-visible {
+        display: none !important;
+    }
+
+    .lc-btn {
+        width: 80% !important;
+    }
+
+    .volt-lc {
+        width: 80% !important; 
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 445px; */
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 590px; */
+        background-size: cover;
+        padding: 0px 70px 40px 70px;
+    }
+
+    .vcc-title {
+        font-size: 35px;
+        margin-bottom: 10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 30px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 290px;
+        margin-top: 50px;
+        padding: 10px
+    }
+
+    .web-visible {
+        display: block;
+        top: -100px !important;
+    }
+
+    .mobile-visible {
+        display: none !important;
+    }
+
+    .lc-btn {
+        width: 80% !important;
+    }
+
+    .volt-lc {
+        width: 80% !important; 
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 625px; */
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        padding: 0px 50px 0px 50px;
+        /* height: 625px; */
+        background-size: cover;
+    }
+
+    .vcc-title {
+        font-size: 45px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 30px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        margin-top: 80px;
+        width: 380px;
+        padding: 10px;
+    }
+
+    .web-visible {
+        display: block;
+    }
+
+    .mobile-visible {
+        display: none;
+    }
+
+    /* Styles */
+    h5 {
+        font-weight: 600;
+        font-size: 22px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 1024px and up) */
+@media only screen and (min-width: 1024) {
+    .login-btn {
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px 0;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 97vh; */
+        background-size: cover;
+        padding: 80px 70px 0px 70px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        height: 755px;
+        background-size: cover;
+    }
+
+    .vcc-title {
+        font-size: 55px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 40px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 380px;
+        margin-top: 150px;
+    }
+
+    .web-visible {
+        display: block;
+        top: -100px !important;
+    }
+
+    .mobile-visible {
+        display: none !important;
+    }
+
+    /* Styles */
+
+    h5 {
+        font-weight: 600;
+        font-size: 23px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 32px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+    /* Styles */
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .email-pass-lable {
+        font-size: 20px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        margin: 0px 0px 0px 7px;
+    }
+
+    .login-btn {
+        height: 50px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        height: 50px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 785px; */
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 97vh; */
+        background-size: cover;
+        padding: 80px 70px 0px 70px;
+    }
+
+    .vcc-title {
+        font-size: 55px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 40px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 67%;
+        margin-top: 140px;
+        padding: 10px
+    }
+
+    .web-visible {
+        display: block;
+        top: -100px !important;
+    }
+
+    .mobile-visible {
+        display: none !important;
+    }
+
+    /* Styles */
+
+    h5 {
+        font-weight: 600;
+        font-size: 23px;
+        margin: 5px;
+        color: white;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 5px;
+        color: #DA4C26;
+        font-size: 32px;
+    }
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .email-pass-lable {
+        font-size: 20px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        margin: 0px 0px 0px 7px;
+    }
+
+    .login-btn {
+        height: 50px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        height: 50px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 755px; */
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 97vh; */
+        background-size: cover;
+        padding: 50px 70px 0px 70px;
+    }
+
+    .vcc-title {
+        font-size: 55px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 40px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 420px;
+        margin-top: 100px;
+        padding: 10px
+    }
+
+    .web-visible {
+        display: block;
+        top: -100px !important;
+    }
+
+    .mobile-visible {
+        display: none !important;
+    }
+
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .email-pass-lable {
+        font-size: 20px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        margin: 0px 0px 0px 7px;
+    }
+
+    .login-btn {
+        height: 50px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        height: 50px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 885px; */
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 97vh; */
+        background-size: cover;
+        padding: 120px 70px 0px 70px;
+    }
+
+    .vcc-title {
+        font-size: 55px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 40px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 67%;
+        margin-top: 150px;
+        padding: 10px
+    }
+
+    .web-visible {
+        display: block;
+        top: -100px !important;
+    }
+
+    .mobile-visible {
+        display: none !important;
+    }
+
+
+    .login-box--copy {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .email-pass-lable {
+        font-size: 20px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        margin: 0px 0px 0px 7px;
+    }
+
+    .login-btn {
+        height: 60px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        height: 60px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 1065px; */
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 97vh; */
+        background-size: cover;
+        padding: 130px 70px 0px 70px;
+    }
+
+    .vcc-title {
+        font-size: 100px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 75px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 600px;
+        margin-top: 160px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .email-pass-lable {
+        font-size: 40px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        margin: 0px 0px 0px 7px;
+    }
+
+    .login-btn {
+        height: 100px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        height: 100px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 1420px; */
+        background-size: cover;
+        padding: 140px 100px 0px 100px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 1420px; */
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .vcc-title {
+        font-size: 135px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 95px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 800px;
+        margin-top: 200px;
+    }
+
+    .login-title {
+        font-size: 115px;
+    }
+
+    .input-text--login {
+        width: 100%;
+        font-size: 50px;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .forgot-title {
+        font-size: 40px !important;
+    }
+
+    .password-title {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 3456px) {
+    .email-pass-lable {
+        font-size: 40px;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        margin: 0px 0px 0px 7px;
+    }
+
+    .login-btn {
+        height: 100px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        margin: 5px;
+        background-color: #5090ef;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+
+    .live-chat-btn {
+        height: 100px;
+        padding-bottom: 2px;
+        font-weight: 700;
+        background-color: #F99F2B;
+        color: white;
+        width: 100%;
+        border: 0;
+        border-radius: 7px;
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_right_bg.png');
+        /* height: 1420px; */
+        background-size: cover;
+        padding: 480px 100px 0px 100px;
+    }
+
+    .logo-bg-login {
+        background-image: url('https://vtube.net/images/default-source/vcc2022/vcc032022_login_left_bg.png');
+        /* height: 2230px; */
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .vcc-title {
+        font-size: 135px;
+        margin-bottom: -10px;
+        -webkit-text-stroke: 1px rgb(130, 138, 255);
+    }
+
+    .vcc-sub-title {
+        font-size: 95px;
+        text-shadow: 0px 0px 1px rgb(128, 125, 125), 0 0 1em rgb(128, 125, 125), 0 0 0.2em rgb(128, 125, 125);
+    }
+
+    .vcc2022-logo {
+        width: 1100px;
+        margin-top: 430px;
+    }
+
+    .login-title {
+        font-size: 115px;
+    }
+
+    .input-text--login {
+        width: 100%;
+        font-size: 50px;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .forgot-title {
+        font-size: 40px !important;
+    }
+
+    .password-title {
+        font-size: 40px;
+    }
+}
+
+.info-box-holder {
+    padding: 15px 40px 40px 40px;
+    background-color: #E8E8E8;
+}
+
+.chatbox-holder {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+}
+
+.chatbox {
+    width: 100%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px 10px 0 0;
+    background: white;
+    transition: .1s ease-out;
+}
+
+.chatbox-top {
+    position: relative;
+    display: flex;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+    background: rgba(0, 0, 0, .05);
+}
+
+.chatbox-icons {
+    padding: 0 10px 0 0;
+    display: flex;
+    position: relative;
+}
+
+.chatbox-icons .fa {
+    background: rgba(220, 0, 0, .6);
+    padding: 3px 5px;
+    margin: 0 0 0 3px;
+    color: white;
+    border-radius: 0 5px 0 5px;
+    transition: 0.3s;
+}
+
+.chatbox-icons .fa:hover {
+    border-radius: 5px 0 5px 0;
+    background: rgba(220, 0, 0, 1);
+}
+
+.chatbox-icons a,
+.chatbox-icons a:link,
+.chatbox-icons a:visited {
+    color: white;
+}
+
+.chat-partner-name,
+.chat-group-name {
+    flex: 1;
+    font-size: 15px;
+    font-weight: bold;
+    color: #30649c;
+    text-shadow: 1px 1px 0 white;
+    transition: .1s ease-out;
+}
+
+.status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #cacaca;
+    margin: 0 3px 0 0;
+}
+
+.online {
+    background: #b7fb00;
+}
+
+.away {
+    background: #ffae00;
+}
+
+.donot-disturb {
+    background: #ff4343;
+}
+
+.chatbox-avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    position: absolute;
+    transition: .1s ease-out;
+    bottom: 0;
+    left: 6px;
+}
+
+.chatbox-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chat-messages {
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    flex: 1;
+}
+
+.message-box-holder {
+    width: 100%;
+    margin: 0 0 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+.message-sender {
+    font-size: 12px;
+    margin: 0 0 15px;
+    color: #30649c;
+    align-self: flex-start;
+}
+
+.message-sender a,
+.message-sender a:link,
+.message-sender a:visited,
+.chat-partner-name a,
+.chat-partner-name a:link,
+.chat-partner-name a:visited {
+    color: #30649c;
+    text-decoration: none;
+}
+
+.message-box {
+    padding: 6px 10px;
+    border-radius: 0 6px 0 6px;
+    position: relative;
+    background: rgba(100, 170, 0, .1);
+    border: 2px solid rgba(100, 170, 0, .1);
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+.message-box:after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid rgba(100, 170, 0, .2);
+    border-right: none;
+    bottom: -22px;
+    right: 10px;
+}
+
+.message-partner {
+    background: rgba(0, 114, 135, .1);
+    border: 2px solid rgba(0, 114, 135, .1);
+    align-self: flex-start;
+}
+
+.message-partner:after {
+    right: auto;
+    bottom: auto;
+    top: -22px;
+    left: 9px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 114, 135, .2);
+    border-left: none;
+}
+
+.chat-input-holder {
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.chat-input {
+    resize: none;
+    padding: 5px 10px;
+    height: 40px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #999999;
+    flex: 1;
+    border: none;
+    background: rgba(0, 0, 0, .05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.chat-input:focus,
+.message-send:focus {
+    outline: none;
+}
+
+.message-send::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.message-send {
+    -webkit-appearance: none;
+    background: #2E206B;
+
+    color: white;
+    font-size: 12px;
+    padding: 0 15px;
+    border: none;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.attachment-panel {
+    padding: 3px 10px;
+    text-align: right;
+}
+
+.attachment-panel a,
+.attachment-panel a:link,
+.attachment-panel a:visited {
+    margin: 0 0 0 7px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.chatbox-min {
+    bottom: -362px;
+}
+
+.chatbox-min .chatbox-avatar {
+    width: 60px;
+    height: 60px;
+}
+
+.chatbox-min .chat-partner-name,
+.chatbox-min .chat-group-name {
+    padding: 0 0 0 75px;
+}
+
+.settings-popup {
+    background: white;
+    border-radius: 20px/10px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
+    font-size: 13px;
+    opacity: 0;
+    padding: 10px 0;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 33px;
+    transition: .15s;
+    transform: scale(1, 0);
+    transform-origin: 50% 0;
+    width: 120px;
+    z-index: 2;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: 2px solid rgba(0, 0, 0, .3);
+}
+
+.settings-popup:after,
+.settings-popup:before {
+    border: 7px solid transparent;
+    border-bottom: 7px solid white;
+    border-top: none;
+    content: "";
+    position: absolute;
+    left: 45px;
+    top: -10px;
+    border-top: 3px solid rgba(0, 0, 0, .2);
+}
+
+.settings-popup:before {
+    border-bottom: 7px solid rgba(0, 0, 0, .25);
+    top: -11px;
+}
+
+.settings-popup:after {
+    border-top-color: transparent;
+}
+
+#chkSettings {
+    display: none;
+}
+
+#chkSettings:checked+.settings-popup {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.settings-popup ul li a,
+.settings-popup ul li a:link,
+.settings-popup ul li a:visited {
+    color: #999;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+.settings-popup ul li a:hover {
+    background: rgba(0, 0, 0, .05);
+}
